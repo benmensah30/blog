@@ -10,9 +10,16 @@
     font-family:roboto-thin;
     src: url("../fonts/Roboto-Thin.ttf");
 }
+@font-face {
+    font-family: roboto-black;
+    src: url("../fonts/Roboto-Black.ttf");
+}
 
 html,body{
     font-family: roboto-regular;
     padding: 0;
     margin: 0;
+}
+.menu-bar .menu-active{
+    font-family: roboto-black;
 }

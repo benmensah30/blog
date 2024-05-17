@@ -9,5 +9,8 @@
     <?php 
        require_once '../../../includes/menu.php';
     ?>
+    <a href="/blog/assets/css/pages/newBlog.php">
+        Créer un nouvel article
+    </a>
 </body>
 </html>

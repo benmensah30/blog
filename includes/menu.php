@@ -11,7 +11,10 @@
                         <a href="/blog/assets/css/pages/article.php?page=article"  class="<?=(isset($_GET["page"]) &&
                        $_GET["page"] == "article" ? "menu-active" : ""); ?>">Articles</a>
                     </li>
-                    <li>
+                    <?php
+                    if (!isset($_COOKIE['username'])) {
+                    ?>
+                   <li>
                         <a href="/blog/assets/css/pages/inscription.php?page=inscription"  class="<?=(isset($_GET["page"]) &&
                        $_GET["page"] == "inscription" ? "menu-active" : ""); ?>">Insciption</a>
                     </li>
@@ -19,6 +22,9 @@
                         <a href="/blog/assets/css/pages/connexion.php?page=connexion"  class="<?=(isset($_GET["page"]) &&
                        $_GET["page"] == "connexion" ? "menu-active" : ""); ?>">connexion</a>
                     </li>
+                     <?php
+                     }
+                     ?>
                 </ul>
             </td>
             <?php

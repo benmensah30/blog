@@ -1,3 +1,8 @@
+<?php 
+    if(isset($_COOKIE['username'])){
+        header('Location: /blog');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
